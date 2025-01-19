@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}
+    {{ super() }}
+    Rutas
+{% endblock %}
+
+{% block content %}
+    <h1>Estas son tus rutas {{ nombre }}</h1>
+    <small>IP <code>{{ip}}</code></small>
+{% endblock %}

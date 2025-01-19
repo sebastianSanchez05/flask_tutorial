@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% import 'macros.html' as macros %}
+
+{% block title %}
+    {{ super() }} Acerca de
+{% endblock %}
+
+{% block content %}
+<h1>Bienvenido {{ nombre }}!</h1>
+<p>Esta es tu dirección IP:</p>
+<code>{{ ip }}</code>
+<h3>Tus cursos</h3>
+<ul>
+    {% for curso in cursos %}
+        {{ macros.mostrar_curso(curso) }}
+    {% endfor %}
+</ul>
+{% endblock %}

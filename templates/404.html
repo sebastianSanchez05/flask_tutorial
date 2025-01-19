@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}
+    {{ super() }}
+    404 Página no encotrada
+{% endblock %}
+{% block content %}
+<center>
+    <h1>Página no encontrada</h1>
+    <h3>404 Error</h3>
+    <span><a href="{{url_for('index')}}">Volver al inicio</a></span>
+</center>
+{% endblock %}
